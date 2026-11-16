@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dice Roll application
+dice_roll_logs/
+
+# VS Code local settings
+.vscode/

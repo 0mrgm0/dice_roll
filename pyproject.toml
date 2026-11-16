@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dice_roll"
+version = "0.1.0"
+description = "A graphical polyhedral dice roller built with Python and PySide6."
+requires-python = ">=3.10"
+
+dependencies = [
+    "numpy",
+    "PySide6",
+]
+
+[project.gui-scripts]
+dice_roll = "dice_roll.dice_gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dice_roll = ["img/*.svg"]
